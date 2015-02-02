@@ -79,12 +79,12 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         Item item = current.item;
         current = current.next;
         if (prev == null) {
-          first = current;
+            first = current;
         } else {
-          prev.next = current;
+            prev.next = current;
         }
-        if (isEmpty()) {
-          last = null;
+        if (current == null) {
+            last = prev;
         }
         count--;
         return item;
