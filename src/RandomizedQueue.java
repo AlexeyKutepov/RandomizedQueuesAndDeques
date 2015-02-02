@@ -67,7 +67,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         if (first == null) {
             throw new NoSuchElementException();
         }
-        int number = StdRandom.uniform(0, count);
+        int number = StdRandom.uniform(count);
         Node prev = null;
         Node current = first;
         for (int i = 0; i <= number; i++) {
@@ -98,7 +98,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         if (first == null) {
             throw new NoSuchElementException();
         }
-        int number = StdRandom.uniform(0, count);
+        int number = StdRandom.uniform(count);
         Node current = first;
         for (int i = 0; i <= number; i++) {
             if (i != number) {
@@ -138,15 +138,5 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
      * @param args - args
      */
     public static void main(String[] args) {
-        RandomizedQueue<String> randomizedQueue = new RandomizedQueue<String>();
-
-        for (int i = 0; i < 10; i++) {
-            randomizedQueue.enqueue(String.valueOf(StdRandom.uniform(0, 1000)));
-        }
-
-        for (int i = 0; i < 10; i++) {
-            StdOut.println(randomizedQueue.dequeue());
-            StdOut.println(randomizedQueue.isEmpty());
-        }
     }
 }
