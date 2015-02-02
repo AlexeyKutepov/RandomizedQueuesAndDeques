@@ -11,9 +11,33 @@ public class Deque<Item> implements Iterable<Item> {
     private int count;
 
     private class Node {
-        Item item;
-        Node next;
-        Node back;
+        private Item item;
+        private Node next;
+        private Node back;
+
+        public Item getItem() {
+            return item;
+        }
+
+        public void setItem(Item item) {
+            this.item = item;
+        }
+
+        public Node getNext() {
+            return next;
+        }
+
+        public void setNext(Node next) {
+            this.next = next;
+        }
+
+        public Node getBack() {
+            return back;
+        }
+
+        public void setBack(Node back) {
+            this.back = back;
+        }
     }
 
     /**
@@ -50,12 +74,12 @@ public class Deque<Item> implements Iterable<Item> {
         }
         Node oldFirst = first;
         first = new Node();
-        first.item = item;
-        first.next = oldFirst;
+        first.setItem(item);
+        first.setNext(oldFirst);
         if (oldFirst == null) {
             last = first;
         } else {
-            oldFirst.back = first;
+            oldFirst.setBack(first);
         }
         count++;
     }
@@ -70,12 +94,12 @@ public class Deque<Item> implements Iterable<Item> {
         }
         Node oldLast = last;
         last = new Node();
-        last.item = item;
-        last.back = oldLast;
+        last.setItem(item);
+        last.setBack(oldLast);
         if (oldLast == null) {
             first = last;
         } else {
-          oldLast.next = last;
+          oldLast.setNext(last);
         }
         count++;
     }
@@ -88,14 +112,14 @@ public class Deque<Item> implements Iterable<Item> {
         if (isEmpty()) {
             throw new NoSuchElementException();
         }
-        Item result = first.item;
-        first = first.next;
+        Item result = first.getItem();
+        first = first.getNext();
         if (first == null) {
             last = null;
         } else {
-          first.back = null;
-          if (first.next == null) {
-            last.back = null;
+          first.setBack(null);
+          if (first.getNext() == null) {
+            last.setBack(null);
           }
         }
         count--;
@@ -110,14 +134,14 @@ public class Deque<Item> implements Iterable<Item> {
         if (isEmpty()) {
             throw new NoSuchElementException();
         }
-        Item result = last.item;
-        last = last.back;
+        Item result = last.getItem();
+        last = last.getBack();
         if (last == null) {
             first = null;
         } else {
-          last.next = null;
-          if (last.back == null) {
-            first.next = null;
+          last.setNext(null);
+          if (last.getBack() == null) {
+            first.setNext(null);
           }
         }
         count--;
@@ -143,8 +167,8 @@ public class Deque<Item> implements Iterable<Item> {
             if (current == null) {
                 throw new NoSuchElementException();
             }
-            Item item = current.item;
-            current = current.next;
+            Item item = current.getItem();
+            current = current.getNext();
             return item;
         }
     }

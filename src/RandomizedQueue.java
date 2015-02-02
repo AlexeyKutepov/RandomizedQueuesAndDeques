@@ -11,8 +11,24 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     private int count;
 
     private class Node {
-        Item item;
-        Node next;
+        private Item item;
+        private Node next;
+
+        public Item getItem() {
+            return item;
+        }
+
+        public void setItem(Item item) {
+            this.item = item;
+        }
+
+        public Node getNext() {
+            return next;
+        }
+
+        public void setNext(Node next) {
+            this.next = next;
+        }
     }
 
     /**
@@ -49,12 +65,12 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         }
         Node oldLast = last;
         last = new Node();
-        last.item = item;
-        last.next = null;
+        last.setItem(item);
+        last.setNext(null);
         if (isEmpty()) {
           first = last;
         } else {
-          oldLast.next = last;
+          oldLast.setNext(last);
         }
         count++;
     }
@@ -73,15 +89,15 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         for (int i = 0; i <= number; i++) {
             if (i != number) {
                 prev = current;
-                current = current.next;
+                current = current.getNext();
             }
         }
-        Item item = current.item;
-        current = current.next;
+        Item item = current.getItem();
+        current = current.getNext();
         if (prev == null) {
             first = current;
         } else {
-            prev.next = current;
+            prev.setNext(current);
         }
         if (current == null) {
             last = prev;
@@ -102,10 +118,10 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         Node current = first;
         for (int i = 0; i <= number; i++) {
             if (i != number) {
-                current = current.next;
+                current = current.getNext();
             }
         }
-        return current.item;
+        return current.getItem();
     }
 
     /**
@@ -123,8 +139,8 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             mas = new Object[size()];
            Node current = first;
             for (int i = 0; i < mas.length; i++) {
-                mas[i] = current.item;
-                current = current.next;
+                mas[i] = current.getItem();
+                current = current.getNext();
             }
             StdRandom.shuffle(mas);
           count = 0;

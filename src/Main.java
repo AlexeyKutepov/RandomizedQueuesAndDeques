@@ -29,7 +29,7 @@ public class Main {
         StdOut.println("size = " + randomizedQueue.size());
       }
       StdOut.println("==============================================" );
-      for (int i = 0; i < 11; i++) {
+      for (int i = 0; i < 10; i++) {
         int a = StdRandom.uniform(1000);
         StdOut.println("in = " + a);
         StdOut.println("dequeue = " + randomizedQueue.dequeue());
