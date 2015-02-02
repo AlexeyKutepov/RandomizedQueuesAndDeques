@@ -78,10 +78,13 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         }
         Item item = current.item;
         current = current.next;
+        if (prev == null) {
+          first = current;
+        } else {
+          prev.next = current;
+        }
         if (isEmpty()) {
           last = null;
-        } else if (prev != null) {
-            prev.next = current;
         }
         count--;
         return item;
@@ -135,6 +138,15 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
      * @param args - args
      */
     public static void main(String[] args) {
+        RandomizedQueue<String> randomizedQueue = new RandomizedQueue<String>();
 
+        for (int i = 0; i < 10; i++) {
+            randomizedQueue.enqueue(String.valueOf(StdRandom.uniform(0, 1000)));
+        }
+
+        for (int i = 0; i < 10; i++) {
+            StdOut.println(randomizedQueue.dequeue());
+            StdOut.println(randomizedQueue.isEmpty());
+        }
     }
 }
