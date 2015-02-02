@@ -117,18 +117,30 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     }
 
     private class ListIterator implements Iterator<Item>  {
-        private Node current = first;
-        public boolean hasNext() { return current != null; }
+        private Object[] mas;
+        private int count;
+        private ListIterator() {
+            mas = new Object[size()];
+           Node current = first;
+            for (int i = 0; i < mas.length; i++) {
+                mas[i] = current.item;
+                current = current.next;
+            }
+            StdRandom.shuffle(mas);
+          count = 0;
+        }
+
+        public boolean hasNext() { return count != mas.length; }
         public void remove() {
             throw new UnsupportedOperationException();
         }
         public Item next()
         {
-            if (current == null) {
+            if (count == mas.length) {
                 throw new NoSuchElementException();
             }
-            Item item = current.item;
-            current = current.next;
+            Item item = (Item) mas[count];
+            count++;
             return item;
         }
     }

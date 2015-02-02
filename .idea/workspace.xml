@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9c2e2f-ed2e-4a64-a1ee-b796facd22e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Deque.java" afterPath="$PROJECT_DIR$/src/Deque.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RandomizedQueue.java" afterPath="$PROJECT_DIR$/src/RandomizedQueue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RandomizedQueuesAndDeques.iws" />
@@ -30,39 +30,26 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="685" max-vertical-offset="1305">
-              <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="705">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding>
-                <element signature="e#104#113#0" expanded="true" />
+                <element signature="e#134#143#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Deque.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Deque.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3585746" vertical-offset="1249" max-vertical-offset="2370">
-              <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
-              <folding>
-                <element signature="e#2820#2821#0" expanded="true" />
-                <element signature="e#2861#2862#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomizedQueue.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RandomizedQueue.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RandomizedQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2160">
-              <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.6013363" vertical-offset="0" max-vertical-offset="2340">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2518#2519#0" expanded="true" />
                 <element signature="e#2559#2560#0" expanded="true" />
-                <element signature="e#2750#2751#0" expanded="true" />
-                <element signature="e#2815#2816#0" expanded="true" />
+                <element signature="e#3089#3090#0" expanded="true" />
+                <element signature="e#3154#3155#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,9 +85,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/Subset.java" />
-        <option value="$PROJECT_DIR$/src/RandomizedQueue.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Deque.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/RandomizedQueue.java" />
       </list>
     </option>
   </component>
@@ -463,7 +450,7 @@
       <updated>1422812226513</updated>
       <workItem from="1422812229991" duration="1370000" />
       <workItem from="1422859673355" duration="6120000" />
-      <workItem from="1422871063920" duration="8138000" />
+      <workItem from="1422871063920" duration="9407000" />
     </task>
     <task id="LOCAL-00001" summary="Added Deque">
       <created>1422862538939</created>
@@ -485,15 +472,19 @@
       <created>1422883593101</created>
       <updated>1422883593101</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Bug fix">
+      <created>1422886166001</created>
+      <updated>1422886166001</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15628000" />
+    <option name="totallyTimeSpent" value="16897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1045" extended-state="4" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -508,14 +499,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16808964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16808964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4716981" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -547,44 +538,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>75</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>77</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>78</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Deque.java</url>
-          <line>109</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="11" />
     </breakpoint-manager>
   </component>
@@ -598,7 +551,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding>
-            <element signature="e#104#113#0" expanded="true" />
+            <element signature="e#134#143#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,8 +575,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2518#2519#0" expanded="true" />
             <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2750#2751#0" expanded="true" />
-            <element signature="e#2815#2816#0" expanded="true" />
+            <element signature="e#3089#3090#0" expanded="true" />
+            <element signature="e#3154#3155#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -641,7 +594,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding>
-            <element signature="e#104#113#0" expanded="true" />
+            <element signature="e#134#143#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -665,8 +618,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2518#2519#0" expanded="true" />
             <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2750#2751#0" expanded="true" />
-            <element signature="e#2815#2816#0" expanded="true" />
+            <element signature="e#3089#3090#0" expanded="true" />
+            <element signature="e#3154#3155#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -702,30 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RandomizedQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="2160">
-          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2750#2751#0" expanded="true" />
-            <element signature="e#2815#2816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="685" max-vertical-offset="1305">
-          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-          <folding>
-            <element signature="e#104#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Deque.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3585746" vertical-offset="1249" max-vertical-offset="2370">
@@ -733,6 +662,30 @@
           <folding>
             <element signature="e#2820#2821#0" expanded="true" />
             <element signature="e#2861#2862#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="705">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="e#134#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandomizedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6013363" vertical-offset="0" max-vertical-offset="2340">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2518#2519#0" expanded="true" />
+            <element signature="e#2559#2560#0" expanded="true" />
+            <element signature="e#3089#3090#0" expanded="true" />
+            <element signature="e#3154#3155#0" expanded="true" />
           </folding>
         </state>
       </provider>
