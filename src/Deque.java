@@ -19,24 +19,24 @@ public class Deque<Item> implements Iterable<Item> {
             return item;
         }
 
-        public void setItem(Item item) {
-            this.item = item;
+        public void setItem(Item inputItem) {
+            this.item = inputItem;
         }
 
         public Node getNext() {
             return next;
         }
 
-        public void setNext(Node next) {
-            this.next = next;
+        public void setNext(Node inputNext) {
+            this.next = inputNext;
         }
 
         public Node getBack() {
             return back;
         }
 
-        public void setBack(Node back) {
-            this.back = back;
+        public void setBack(Node inputBack) {
+            this.back = inputBack;
         }
     }
 
